@@ -1,0 +1,62 @@
+//프로그램 실행 단축기 : ctrl f11
+
+package exam; // 패키지 이름  
+
+public class ex01 { // 클래스 이름
+	public static void main(String[] args) {  // main method 
+		System.out.println("Hello world");
+		System.out.println("Hello" + "world");
+		
+		/*
+		 단축키
+		 - 글자크기 조절 : ctrl +, -
+		 - 코드 저장 : ctrl s
+		 - 자동완성 : ctrl space
+		 
+		 주석
+		 - // : 단일문장
+		 - /* : 다중문장
+		 - /*** : 문서 API		 
+		 
+		 서식문자
+		 - %d : 10진수
+		 - %o : 8진수
+		 - %x : 16진수
+		 - %f : 실수
+		 - %e : 지수
+		 - %g : 출력 대상에 따라 %e 또는 %f
+		 - %s : 문자열
+		 - %c : 단일문자
+		 
+		 제어문자
+		 - \n : enter
+		 - \t : tab
+		 - \r : 첫 칸으로 이동
+		 - \' : '
+		 - \" : "
+		 */
+	}
+}
+
+package exam;
+
+public class ex02 {
+	public static void main(String[] args) {
+		//실행문은 무조건 세미콜론으로 끝나야 한 명령코드로 인식
+		int a=1; int b=2;
+		System.out.println(a); System.out.println(b);
+		int c=3;
+		int d=
+				4;
+		System.out.println(c); // 괄호 안의 내용 출력, enter(자동개행)
+		System.out.printf("%d\n", d); // : 문자열 -> 서식 문자
+
+    double a=1.1;
+		System.out.printf("%f\n", a);
+		System.out.printf("%.2f\n", a);
+
+		String b="Hello Java";
+		System.out.printf("%s\n",  b);
+	}
+}
+
