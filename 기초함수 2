@@ -1,0 +1,48 @@
+  /*
+     데이터 타입
+		 - 정수형 : byte(1), short(2), int(4), long(8) *2, 8, 16진수로 표현 시 10진수로 출력
+		 		 - byte : 색상정보, 파일, 이미지 등 데이터 이진(binary) 처리(-128~127)
+		 		 - short : 짧은 정수(-32768~-32767)
+		 		 - int : 약 21억의 정수 취급
+		 		 - long : 그 이상의 정수 취급
+		 - 실수형 : float(4), double(8)
+		 		 - float : 소수점 7번째 자리까지 표기
+		 		 - double : 소수점 15번째 자리까지 표기
+		 - 논리형 : boolean
+	*/
+		// long num1 = 12345134254;
+		// System.out.println(num1); # Error
+		int alpa = 'A';
+		System.out.println(alpa); // 65(A에 대한 유니코드값 출력)
+		
+		long num2 = 12345134254l;
+		System.out.println(num2); // long : int 형 범위 초과 시 뒤에 l, L 표기 필수
+				
+		float num3 = 21.0975f; // float : f, F 표기 필수
+		System.out.println(num3);
+		
+		boolean num4 = true;
+		System.out.println(num4);
+
+   /*
+		 char : 단일문자를 아스키코드 값으로 변환하여 저장, 다중문자 입력 시 오류 발생
+		 
+		 기본 자료형
+		 - 실제 데이터 값 저장
+		 - 정수, 실수, 논리 타입으로 분류된 8개의 자료형
+		 참조 자료형
+		 - 데이터 저장되어 있는 메모리 번지 저장
+		 - 배열, 열거, 클래스, 인터페이스
+
+		 stack
+		 - 기본 자료형 등 해당 지역변수 값 저장
+		 - heap 영역에 생성된 object 타입의 데이터 참조값(=주소값) 저장
+		 heap
+		 - 객체, 배열 생성
+		 - 참조 변수나 필드가 없다면 쓰레기값으로 취급 -> jvm(garbage collector)에서 제거 처리
+	*/
+		String name = "gini";
+		System.out.println(name);
+		String name1 = new String("gini"); // 기존 표현
+		System.out.println(name1);
+	}
