@@ -34,20 +34,20 @@ public class ex01 { // 클래스 이름
 		 */
 
 //실행문은 무조건 세미콜론으로 끝나야 한 명령코드로 인식
-		int a=1; int b=2;
-		System.out.println(a); System.out.println(b);
-		int c=3;
-		int d=
+int a=1; int b=2;
+System.out.println(a); System.out.println(b);
+int c=3;
+int d=
 				4;
-		System.out.println(c); // 괄호 안의 내용 출력, enter(자동개행)
-		System.out.printf("%d\n", d); // : 문자열 -> 서식 문자
+System.out.println(c); // 괄호 안의 내용 출력, enter(자동개행)
+System.out.printf("%d\n", d); // : 문자열 -> 서식 문자
 		
-		double e=1.1;
-		System.out.printf("%f\n", e);
-		System.out.printf("%.2f\n", e);
+double e=1.1;
+System.out.printf("%f\n", e);
+System.out.printf("%.2f\n", e);
 
-		String f="Hello Java";
-		System.out.printf("%s\n",  f);
+String f="Hello Java";
+System.out.printf("%s\n",  f);
 
 		 /*
 		 변수
