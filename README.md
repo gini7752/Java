@@ -1,6 +1,6 @@
 # Java
 ## tool : Eclipse IDE for Java Developers -2022.12
-## File -> Java Project -> Finish -> src -> New class
+## File -> New Java Project -> src -> New Package -> New class 
 ### day01 : 기초함수
 ### day02 : 
 ### day03 : 
