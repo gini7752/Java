@@ -1,4 +1,4 @@
-package exam; // 패키지 이름  
+package exam; // 패키지 이름   
 
 public class ex01 { // 클래스 이름
 	public static void main(String[] args) {  // main method(자동완성 ctrl space)
