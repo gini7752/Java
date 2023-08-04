@@ -10,19 +10,19 @@
 		 		 - double : 소수점 15번째 자리까지 표기
 		 - 논리형 : boolean
 		 */
-		// long num1 = 12345134254;
-		// System.out.println(num1); # Error
-		int alpa = 'A';
-		System.out.println(alpa); // 65(A에 대한 유니코드값 출력)
+// long num1 = 12345134254;
+// System.out.println(num1); # Error
+int alpa = 'A';
+System.out.println(alpa); // 65(A에 대한 유니코드값 출력)
 		
-		long num2 = 12345134254l;
-		System.out.println(num2); // long : int 형 범위 초과 시 뒤에 l, L 표기 필수
+long num2 = 12345134254l;
+System.out.println(num2); // long : int 형 범위 초과 시 뒤에 l, L 표기 필수
 				
-		float num3 = 21.0975f; // float : f, F 표기 필수
-		System.out.println(num3);
+float num3 = 21.0975f; // float : f, F 표기 필수
+System.out.println(num3);
 		
-		boolean num4 = true;
-		System.out.println(num4);
+boolean num4 = true;
+System.out.println(num4);
 
    		 /*
 		 char : 단일문자를 아스키코드 값으로 변환하여 저장, 다중문자 입력 시 오류 발생
@@ -41,8 +41,7 @@
 		 - 객체, 배열 생성
 		 - 참조 변수나 필드가 없다면 쓰레기값으로 취급 -> jvm(garbage collector)에서 제거 처리
 		 */
-		String name = "gini";
-		System.out.println(name);
-		String name1 = new String("gini"); // 기존 표현
-		System.out.println(name1);
-	}
+String name = "gini";
+System.out.println(name);
+String name1 = new String("gini"); // 기존 표현
+System.out.println(name1);
