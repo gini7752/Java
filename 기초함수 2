@@ -1,5 +1,5 @@
-  /*
-     데이터 타입
+  		 /*
+    		 데이터 타입
 		 - 정수형 : byte(1), short(2), int(4), long(8) *2, 8, 16진수로 표현 시 10진수로 출력
 		 		 - byte : 색상정보, 파일, 이미지 등 데이터 이진(binary) 처리(-128~127)
 		 		 - short : 짧은 정수(-32768~-32767)
@@ -9,7 +9,7 @@
 		 		 - float : 소수점 7번째 자리까지 표기
 		 		 - double : 소수점 15번째 자리까지 표기
 		 - 논리형 : boolean
-	*/
+		 */
 		// long num1 = 12345134254;
 		// System.out.println(num1); # Error
 		int alpa = 'A';
@@ -24,7 +24,7 @@
 		boolean num4 = true;
 		System.out.println(num4);
 
-   /*
+   		 /*
 		 char : 단일문자를 아스키코드 값으로 변환하여 저장, 다중문자 입력 시 오류 발생
 		 
 		 기본 자료형
@@ -40,7 +40,7 @@
 		 heap
 		 - 객체, 배열 생성
 		 - 참조 변수나 필드가 없다면 쓰레기값으로 취급 -> jvm(garbage collector)에서 제거 처리
-	*/
+		 */
 		String name = "gini";
 		System.out.println(name);
 		String name1 = new String("gini"); // 기존 표현
