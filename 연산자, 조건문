@@ -1,0 +1,55 @@
+			/*
+			연산자(생략 : 비트연산자 - 비트 단위 연산)
+			- 단항연산자 : 피연산자 1개
+			- 이항연산자 : 피연산자 2개
+			- 삼항연산자 : 피연산자 3개
+			* 피연산자 : 연산의 대상, 데이터
+			*/
+
+			// 부호연산자 : 부호 결정(+ : 부호 유지, - : 부호 변경)
+int num1 = 10;
+System.out.println(-num1); // -10
+
+			// 증감연산자 : 1 증가 혹은 감소(++ : 1 증가, -- : 1 감소 -> 전위 : 해당 라인에서 연산, 후위 : 다음 라인에서 연산) 
+int num2 = 5;
+System.out.println(num2++); // 5
+System.out.println(++num2); // 7
+
+			// 산술연산자 : 사칙연산, 나머지(+, -, *, / : 몫, % : 나머지)
+System.out.println(num1*num2); // 70
+System.out.println(num1/num2); // 1
+System.out.println(num1%num2); // 3
+			// 복합대입연산자([연산자]= : 좌변+우변)
+num1 += num2;
+System.out.println(num1); // 17
+
+			// 논리연산자 : 참, 거짓(&& : and, || : or, ! : not, ^ : different)
+System.out.println(!true); // false
+System.out.println(true^false); // true
+
+		/*
+		삼항연산자
+		조건식 ? 피연산자1 : 피연산자2
+		- 코드 간결성
+		- 비가독성
+		- 단순 조건일 시 사용 권장, 복잡한 조건일 시 if문 권장
+		*/
+boolean result1 = (10<20) ? true : false;
+System.out.println(result1);
+int result2 = (true^false) ? 1 : 0;
+System.out.println(result2);
+
+Scanner sc = new Scanner(System.in);
+System.out.println("a : ");
+int a=sc.nextInt();
+System.out.println("b : ");
+int b = sc.nextInt();
+String result = (a>b) ? "a>b" : "a<b";
+System.out.println(result);
+		
+if(a>b)
+	System.out.println("a>b");
+else if (a<b)
+	System.out.println("a<b");
+else
+	System.out.println("a=b");
