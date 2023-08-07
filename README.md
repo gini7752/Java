@@ -3,7 +3,7 @@
 ## File -> New Java Project -> src -> New Package -> New class 
 ### day01 : 기초함수 1
 ### day02 : 기초함수 2
-### day03 : 연산자
+### day03 : 연산자, 조건문
 ### day04 : 
 ### day05 : 
 ### day06 : 
