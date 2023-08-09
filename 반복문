@@ -1,0 +1,58 @@
+		/*
+		for문 
+    - 구하고자 하는 값의 조건을 명확히 알 경우 사용하며 가독성 우수
+		for(초기식;조건식;증감식){
+			실행문
+		}
+		1. 초기식 실행
+		2. 조건식 실행
+		3. 실행문 실행
+		4. 증감식 실행
+		5. 조건식에 부합한지 판별
+		6. 실행문 실행
+		반복하다가 조건식에 부합하지 않을 때 반복문 종료
+		*/
+for(int i=0;i<5;i++)
+	System.out.println(i);
+
+for(int i=5;i>0;i--)
+	System.out.println(i);
+		
+int sum=0;
+for(int i=0; i<=100; i++)
+if(i%2==0)
+	sum+=i;
+System.out.println("1~100까지 짝수 합 : "+sum);
+
+		/*
+		while문
+    - 구하고자 하는 값의 조건이 모호할, 유동적일 경우 사용하며 가독성 결핍
+		while(조건식{
+			실행문 => 조건식이 true일 때 반복 실행
+		*/
+int i=1;
+while(i<=100) {
+	if(i%2==0)
+	System.out.println(i);
+i++;}
+int j=1, sum=0;
+while(j<=100) {
+	sum+=j;
+	j++;
+}
+System.out.println("1+100까지 합 : "+sum);
+}
+
+		/*
+		무한루프
+		- 말 그대로 무한반복 루프
+		- 특정 조건을 걸지 않을 시 무한히 반복 -> 탈출하려면 특정 조건 필요
+		*/
+for(int i=0;;i++) 
+	System.out.println(i); // 무한루프 -for
+		
+int j=1;
+while(true) {
+	System.out.println(j);
+	j++;
+} // 무한루프 - while
