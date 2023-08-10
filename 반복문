@@ -65,7 +65,7 @@ while(true) {
 		- double형의 0.0~1.0 사이 실수값 반환
 		- 정수형을 원한다면 casting 필요
 		 */
-System.out.println((int)(Math.random()*10)+1); // 원하는 범위+1
+System.out.println((int)(Math.random()*10)+1); // 0~9 사이의 난수 +1 => 1~10 사이의 난수
 
 		/*
 		중첩 반복문
