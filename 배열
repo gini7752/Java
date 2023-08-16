@@ -1,0 +1,51 @@
+/*
+배열(array)
+- 같은 타입의 여러 변수를 하나의 묶음으로 취급
+- 인덱스(index) : 배열 요소마다 붙여진 일련번호(0~배열길이-1)
+자료형[] 배열이름 = new 자료형[크기];
+자료형[] 배열이름 = {배열 요소};
++ 배열 선언만 하고 공간 생성하지 않았을 때
+  int arr[] = null;
+  arr[0]=10;
+*/
+
+/*
+new 연산자
+- 객체를 힙 영역에 메모리 공간 할당, 메모리 주소 반환, 생성자 실행
+- new 연산자로 생성된 객체는 동일값을 가졌어도 서로 다른 메모리 할당되어 다른 객체로 분류
+*/
+
+// 4개의 공간을 가진 배열을 선언 
+int arr[] = new int[4]; 
+		
+// 배열에 데이터 넣기 
+arr[0] = 10;
+arr[1] = 20;
+arr[2] = 30;
+arr[3] = 40;
+		
+for(int i = 0; i < arr.length; i++) 
+	System.out.println(arr[i]);
+// 해당 배열의 길이
+System.out.println("arr배열의 길이 : " + arr.length);
+
+Scanner sc = new Scanner(System.in);
+String course[] = {"Java","C++","HTML5","컴퓨터구조","안드로이드"};
+int score[] = {95,88,76,62,55};
+		
+while(true) {
+	System.out.println("과목이름 입력 : ");
+	String sub = sc.nextLine();
+	if(sub.equals("그만")) {
+		System.out.println("프로그램 종료!!");
+		break;}
+	for(int i=0;i<course.length;i++) {
+		if(sub.equals(course[i])) {
+			System.out.printf("%s의 점수는 %d점", course[i], score[i]);
+			System.out.println("");
+			break;}
+		else {
+			System.out.println("없는 과목입니다.");
+			break;}
+		}
+	}
