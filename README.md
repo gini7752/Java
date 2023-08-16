@@ -9,7 +9,7 @@
 ### day05 : 반복문 for(), while()
 ### day06 : 반복문 do while(), 실습
 ### day07 : 배열
-### day08 : 
+### day08 : 다차원 배열
 ### day09 : 
 ### day10 : 
 ### day11 : 
