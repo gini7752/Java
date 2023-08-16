@@ -1,0 +1,21 @@
+/*
+다차원 배열
+- 1차원 배열과는 달리 행과 열로 구성된 배열
+- 수학의 행렬과 동일한 형태
+- 행만 지정하여 선언 가능(열 지정은 선택 -> 행마다 다른 길이의 배열 저장 가능)
+
+int[][] arr = new int[3][];
+arr[0] = new int[3];   // 첫번째 행에 열 3개
+arr[1] = new int[2];   // 두번째 행에 열 2개
+arr[2] = new int[5];   // 세번째 행에 열 5개
+
+int[][] num = {{10,11,12},{20,21,22}};
+int sum = 0;
+System.out.println("num 배열길이 : " + num.length);
+System.out.println("num[0] 배열 길이 : " + num[0].length);
+System.out.println("num[1] 배열 길이 : " + num[1].length);
+		
+for(int i = 0; i < num.length; i++) 
+	for(int j = 0; j < num[i].length; j++) 
+		sum = sum + num[i][j];
+System.out.println("총 합계 : " + sum);
