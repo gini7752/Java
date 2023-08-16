@@ -8,7 +8,7 @@
 ### day04 : 조건문 switch(), if()
 ### day05 : 반복문 for(), while()
 ### day06 : 반복문 do while(), 실습
-### day07 : 
+### day07 : 배열
 ### day08 : 
 ### day09 : 
 ### day10 : 
