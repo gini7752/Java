@@ -1,0 +1,53 @@
+		/*
+		메소드 오버라이딩
+		- 자식클래스는 부모클래스의 필드와 메소드를 가져와서 그대로 사용 가능
+		- 필요 시 상속받은 메소드 내용 변경해서 사용 가능
+		*/
+		
+		/*
+		super()
+		- 매개 값의 개수와 타입이 일치하는 부모 생성자 호출
+		- 매개 값 없을 경우, 부모의 기본 생성자 자동 생성 -> 매개 값 생략 가능
+		*/
+
+		/*
+		final class, final method
+		- final : - 클래스(-> 상속 불가), 필드(-> 초기값 설정 후 수정 불가), 메소드(-> 오버라이딩 불가) 선언 시 사용 가능
+				  - 처음 정의된 상태 불변
+				  
+		*/
+final int a = 10;
+// a = 20; 	// final로 선언되었으므로 값 변경 불가
+System.out.println(a);
+
+class Friend{
+	String name;
+	int age;
+	
+	public Friend(String name, int age) {
+		this.name = name;
+		this.age = age;
+	}
+	
+	public void info() {
+		System.out.println("이름 : "+name);
+		System.out.println("나이 : "+age);
+	}
+}
+
+class FriendDetail extends Friend{
+	String addr, phonenum;
+	
+	public FriendDetail(String name, int age, String addr, String phonenum) {
+		super(name, age);
+		this.addr = addr;
+		this.phonenum = phonenum;
+	}
+	
+	public void showinfo() {
+		System.out.println("이름 : "+name);
+		System.out.println("나이 : "+age);
+		System.out.println("주소 : "+addr);
+		System.out.println("전화번호 : "+phonenum);
+	}
+}
